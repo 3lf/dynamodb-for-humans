@@ -5,7 +5,7 @@
 
 </div>
 
-<div dir="rtl">
+<p dir="rtl">
 
 DynamoDB
 یک پایگاه داده کاملاً مدیریت شده و
@@ -13,7 +13,7 @@ NOSQL
 است که توسط AWS ارائه شده است
 
 
-</div>
+</p>
 
 <div dir="rtl">
 
