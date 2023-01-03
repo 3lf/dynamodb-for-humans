@@ -79,11 +79,11 @@ NOSQL
 
 ##  انواع Primary Key 
 
-🔸 Simple Primary Key
+🔸 کلید اصلی ساده یا Simple Primary Key
 
 >  مشابه Key در هش تیبل!
 
-🔸 Composite Primary Key
+🔸 کلید اضلی ترکیبی یا Composite Primary Key
  
 >  مشابه Simple Primary Key ولی با دو Key. به Key اول Partition Key و به Key دوم Sort Key گفته میشه.
 
