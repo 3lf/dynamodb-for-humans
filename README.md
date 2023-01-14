@@ -243,6 +243,34 @@ resp = client.get_item(
 </div>
 
 
+## Query
+
+از این تابع برای خوندن چند آیتم با Partition Key یکسان استفاده میشه.
+
+پ.ن۱: میتونید برای sort key هم شرط بزارید.
+
+پ.ن۲: حتما باید Partition Key رو بدید و Sort Key اختیاریه.
+
+برای مثال توی کد پایین بخش نام بازیگر اجباری و بخش فیلم اختیاری هست:
+
+<div dir="ltr" align="left">
+
+```python
+import boto3
+
+client = boto3.client(' dynamodb')
+resp = client.query(
+    TableName='MovieRoles',
+    KeyConditionExpression="Actor = 'Tom Hanks' AND Movie BETWEEN 'A' AND 'M'",
+)
+
+```
+
+</div>
+
+پ.ن: همونطور که واضحه اگه توی پروژه شما مثلا نیاز بود برای یک فیلم خاص بازیگر هارو لیست کنید، بهتر بود که Movie به عنوان
+Partition Key انتخاب میشد.
+
 
 
 
